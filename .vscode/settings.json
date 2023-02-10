@@ -1,0 +1,13 @@
+{
+    "editor.fontFamily": "Fira Code",
+    "editor.fontSize": 14.5,
+    "editor.fontLigatures": true,
+    "[dart]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true,
+        }
+    },
+    "dart.previewFlutterUiGuides": true,
+    "dart.previewFlutterUiGuidesCustomTracking": true,
+}
+//https://zenn.dev/inari_sushio/articles/0f4c606c8340ee
