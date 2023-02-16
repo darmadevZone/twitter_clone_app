@@ -14,4 +14,10 @@ class UIConstants {
       centerTitle: true,
     );
   }
+
+  static const List<Widget> bottomTabBarPages = [
+    Text("Feed Page index 0"),
+    Text("index 1"),
+    Text("index 2"),
+  ];
 }

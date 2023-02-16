@@ -1,6 +1,5 @@
 import 'package:fpdart/fpdart.dart';
-
-import 'core.dart';
+import 'package:twitter_clone_app/core/failure.dart';
 
 // Error -> Failure ,Succes -> T
 typedef FutureEither<T> = Future<Either<Failure, T>>;
