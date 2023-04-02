@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:twitter_clone_app/constants/assets_constants.dart';
+import 'package:twitter_clone_app/features/explore/view/explore_view.dart';
+import 'package:twitter_clone_app/features/notifications/views/notification_view.dart';
+import 'package:twitter_clone_app/features/tweet/widgets/tweet_list.dart';
 import 'package:twitter_clone_app/theme/pallete.dart';
 
 class UIConstants {
@@ -16,8 +19,8 @@ class UIConstants {
   }
 
   static const List<Widget> bottomTabBarPages = [
-    Text("Feed Page index 0"),
-    Text("index 1"),
-    Text("index 2"),
+    TweetList(),
+    ExploreView(),
+    NotificationView()
   ];
 }

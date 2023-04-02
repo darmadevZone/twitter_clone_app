@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:twitter_clone_app/constants/constants.dart';
+import 'package:twitter_clone_app/features/home/widgets/side_drawer.dart';
 import 'package:twitter_clone_app/features/tweet/views/create_tweet_view.dart';
 import 'package:twitter_clone_app/theme/pallete.dart';
 
@@ -20,7 +21,6 @@ class _HomeViewState extends State<HomeView> {
   void onPageChange(int index) {
     setState(() {
       _page = index;
-      print("page changed${_page}");
     });
   }
 
@@ -32,7 +32,7 @@ class _HomeViewState extends State<HomeView> {
   Widget build(BuildContext context) {
     final appBar = UIConstants.appBar();
     return Scaffold(
-      appBar: appBar,
+      appBar: _page == 0 ? appBar : null,
       body: IndexedStack(
         index: _page,
         children: UIConstants.bottomTabBarPages,
@@ -66,6 +66,7 @@ class _HomeViewState extends State<HomeView> {
           ),
         ],
       ),
+      drawer: const SizedBox(width: 200, child: SideDrawer()),
       floatingActionButton: FloatingActionButton(
         onPressed: onCreateTweet,
         child: const Icon(
