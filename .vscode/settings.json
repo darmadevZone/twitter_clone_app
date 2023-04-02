@@ -9,8 +9,7 @@
     },
     "dart.previewFlutterUiGuides": true,
     "dart.previewFlutterUiGuidesCustomTracking": true,
-    "editor.rulers": [
-        80
-    ],
+    "editor.rulers": [],
+    "editor.renderLineHighlight": "none",
 }
 //https://zenn.dev/inari_sushio/articles/0f4c606c8340ee
